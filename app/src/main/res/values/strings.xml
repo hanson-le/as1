@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">hhle-FuelTrack</string>
     <string name="main_title">Log Entries</string>
-    <string name="btn_fuel_cost">Total Fuel Cost</string>
     <string name="btn_add_entry">Add New Entry</string>
     <string name="title_activity_add_entry">AddEntryActivity</string>
     <string name="add_date">Date (yyyy-mm-dd)</string>

@@ -47,6 +47,7 @@ public class AddEntryActivity extends AppCompatActivity {
                     myInstance.addEntry(newEntry);
                 }
                 catch(Exception ex){
+                    // show input error toast
                     Context context = getApplicationContext();
                     CharSequence text = "Error in inputs, try again";
                     int duration = Toast.LENGTH_SHORT;
