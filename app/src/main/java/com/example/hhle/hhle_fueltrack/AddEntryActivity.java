@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class AddEntryActivity extends AppCompatActivity {
-    EntryLog myInstance = EntryLog.getMyInstance();
+    private EntryLog myInstance = EntryLog.getMyInstance();
     private EditText dateText;
     private EditText stationText;
     private EditText odometerText;

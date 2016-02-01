@@ -68,7 +68,7 @@ public class Entry {
 
     public String getFuelCost() {
         double value = fuel_amount * fuel_unit_cost / 100;
-        return  String.format("%.2f", value);
+        return  String.format("%.2f", value);gg
     }
 
     @Override

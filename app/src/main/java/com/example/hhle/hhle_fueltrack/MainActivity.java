@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-        private EntryLog myInstance = EntryLog.getMyInstance();
+    private EntryLog myInstance = EntryLog.getMyInstance();
     private ListView entryLogList;
     private Button addEntryButton;
 
