@@ -1,5 +1,10 @@
 package com.example.hhle.hhle_fueltrack;
 
+/* This is a simple model class that deals with individual logs. There are getters and setters for
+all the inputs. There is also a method that calculates the fuel cost. While it is primarily a data class,
+this class overrides the "toString" method in order to limit the amount of function calls.
+ */
+
 public class Entry {
     private String date;
     private String station;
@@ -68,7 +73,7 @@ public class Entry {
 
     public String getFuelCost() {
         double value = fuel_amount * fuel_unit_cost / 100;
-        return  String.format("%.2f", value);gg
+        return  String.format("%.2f", value);
     }
 
     @Override
