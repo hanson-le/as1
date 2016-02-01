@@ -1,0 +1,24 @@
+CMPUT 301 Winter 2016 Assignment 1
+
+Hanson Le
+CCID: hhle
+
+The assignment is an android app that keeps track of a vehicle's fuel consumption. A growing log of the vehicle's fuel usage is kept. A single log holds information such as the date, type of gas, price of gas, and more. Each indvidual log can have their data edited after creation.
+
+I did not fully complete the assignment. When force-killed, my app loses all the logs. This is because I could not get Gson to work properly. I also did not write JUnit tests for the classes.
+
+github repo: https://github.com/hanson-le/as1.git
+youtube video: https://youtu.be/jrIBXoBlE-s
+
+References:
+
+http://stackoverflow.com/questions/16393709/getting-index-of-an-item-in-an-arraylist by Kooki
+http://stackoverflow.com/questions/5195837/format-float-to-n-decimal-places by Arve
+http://stackoverflow.com/questions/17851687/how-to-handle-the-click-event-in-listview-in-android by Blackbelt
+https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView
+https://developer.android.com/training/basics/firstapp/starting-activity.html
+http://stackoverflow.com/questions/32266429/how-to-return-to-parent-activity-in-android
+http://stackoverflow.com/questions/4878159/whats-the-best-way-to-share-data-between-activities by Cristian
+http://developer.android.com/guide/topics/ui/notifiers/toasts.html
+http://stackoverflow.com/questions/5769669/convert-string-to-double-in-java by WhiteFang34
+http://stackoverflow.com/questions/10766492/what-is-the-simplest-way-to-reverse-an-arraylist by Agarwal Shankar
