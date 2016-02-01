@@ -1,5 +1,9 @@
 package com.example.hhle.hhle_fueltrack;
 
+/*
+The main activity that deals with most of the User Interface and showing the log entry.
+ */
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

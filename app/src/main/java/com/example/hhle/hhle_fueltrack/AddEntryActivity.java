@@ -1,5 +1,10 @@
 package com.example.hhle.hhle_fueltrack;
 
+/*
+Despite the class name, this activity class also deals with editing the log entries as well, since
+editing and adding entries is very similar. Unfortunately, this class is very procedural, due to a
+lack of planing on my part.
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
