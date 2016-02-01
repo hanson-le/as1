@@ -8,6 +8,10 @@ public class EntryLog {
         return myInstance;
     }
 
+    public EntryLog() {
+        this.entryList = new ArrayList<Entry>();
+    }
+
     private ArrayList<Entry> entryList;
 
     public void addEntry(Entry entry){

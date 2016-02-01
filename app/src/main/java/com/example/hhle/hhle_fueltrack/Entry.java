@@ -5,21 +5,21 @@ import java.util.Date;
 public class Entry {
     private String date;
     private String station;
-    private String odometer;
+    private double odometer;
     private String grade;
-    private String fuel_amount;
-    private String fuel_unit_cost;
+    private double fuel_amount;
+    private double fuel_unit_cost;
 
     public Entry(){
     }
 
-    public Entry(String date,String station, String odometer, String grade, String fuel_amount, String fuel_unit_cost) throws Exception{
-        this.date = date;
-        this.station =station;
-        this.odometer = odometer;
-        this.grade = grade;
-        this.fuel_amount = fuel_amount;
-        this.fuel_unit_cost = fuel_unit_cost;
+    public Entry(String date,String station, String odometer, String grade, String fuel_amount, String fuel_unit_cost){
+        setDate(date);
+        setStation(station);
+        setOdometer(odometer);
+        setGrade(grade);
+        setFuelAmount(fuel_amount);
+        setFuelUnitCost(fuel_unit_cost);
     }
 
     public void setDate(String date) {
@@ -30,20 +30,24 @@ public class Entry {
         this.station = station;
     }
 
-    public void setOdometer(String odometer) throws Exception {
-        this.odometer = String.format("%.1g%n", odometer);
+    public void setOdometer(String odometer){
+
+        double temp = Double.parseDouble(odometer);
+        this.odometer = temp;
     }
 
     public  void setGrade(String grade){
         this.grade = grade;
     }
 
-    public void setFuelAmount(String fuel_amount) throws Exception{
-        this.fuel_amount = String.format("%.1g%n", fuel_amount);
+    public void setFuelAmount(String fuel_amount){
+        double temp = Double.parseDouble(fuel_amount);
+        this.fuel_amount = temp;
     }
 
-    public void setFuelUnitCost(String fuel_unit_cost) throws Exception {
-        this.fuel_unit_cost = String.format("%.1g%n", fuel_unit_cost);
+    public void setFuelUnitCost(String fuel_unit_cost){
+        double temp = Double.parseDouble(fuel_unit_cost);
+        this.fuel_unit_cost = temp;
     }
 
     public String getDate() {
@@ -54,7 +58,7 @@ public class Entry {
         return this.station;
     }
 
-    public String getOdometer() {
+    public double getOdometer() {
         return this.odometer;
     }
 
@@ -62,11 +66,11 @@ public class Entry {
         return this.grade;
     }
 
-    public String getFuelAmount() {
+    public double getFuelAmount() {
         return this.fuel_amount;
     }
 
-    public String getFuelUnitCost() {
+    public double getFuelUnitCost() {
         return this.fuel_unit_cost;
     }
 }
