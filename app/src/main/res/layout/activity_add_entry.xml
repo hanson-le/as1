@@ -50,14 +50,12 @@
         android:id="@+id/saveEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/saveEntry"
-        android:onClick="saveEntry"/>
+        android:text="@string/saveEntry"/>
 
     <Button
         android:id="@+id/cancelEntry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cancelEntry"
-        android:onClick="cancelEntry"/>
+        android:text="@string/cancelEntry"/>
 
 </LinearLayout>

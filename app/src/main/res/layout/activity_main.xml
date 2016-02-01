@@ -23,14 +23,12 @@
         android:id="@+id/btn_add_entry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_add_entry"
-        android:onClick="addEntry"/>
+        android:text="@string/btn_add_entry"/>
 
     <Button
         android:id="@+id/btn_fuel_cost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_fuel_cost"
-        android:onClick="showCost"/>
+        android:text="@string/btn_fuel_cost"/>
 
 </LinearLayout>
