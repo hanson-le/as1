@@ -1,5 +1,12 @@
 package com.example.hhle.hhle_fueltrack;
 
+/* A model class that hold all the individual logs. This class became a singleton class in order
+to share its data with the other two activity classes. This class has a method that calculates the
+total fuel costs. I wrongly decided to do it in here because of an earlier design choice. There is also
+a method that returns the reverse of the Entry ArrayList. This is because one of the requirements was that
+new log entries had to be lower on the screen and this was the only way I could do it.
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 
