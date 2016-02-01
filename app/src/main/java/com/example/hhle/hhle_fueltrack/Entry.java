@@ -50,24 +50,25 @@ public class Entry {
         return this.station;
     }
 
-    public double getOdometer() {
-        return this.odometer;
+    public String getOdometer() {
+        return String.format("%.1f",this.odometer);
     }
 
     public String getGrade() {
         return this.grade;
     }
 
-    public double getFuelAmount() {
-        return this.fuel_amount;
+    public String getFuelAmount() {
+        return String.format("%.3f", this.fuel_amount);
     }
 
-    public double getFuelUnitCost() {
-        return this.fuel_unit_cost;
+    public String getFuelUnitCost() {
+        return String.format("%.1f",this.fuel_unit_cost);
     }
 
-    public double getFuelCost() {
-        return  getFuelAmount() * getFuelUnitCost() / 100;
+    public String getFuelCost() {
+        double value = fuel_amount * fuel_unit_cost / 100;
+        return  String.format("%.2f", value);
     }
 
     @Override

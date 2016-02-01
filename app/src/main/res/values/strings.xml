@@ -5,10 +5,10 @@
     <string name="title_activity_add_entry">AddEntryActivity</string>
     <string name="add_date">Date (yyyy-mm-dd)</string>
     <string name="add_station">Station Name</string>
-    <string name="add_odometer">Odometer Reading</string>
+    <string name="add_odometer">Odometer Reading (km) (1 sigfig)</string>
     <string name="add_grade">Fuel Grade</string>
-    <string name="add_fuel_amount">Fuel Amount</string>
-    <string name="add_fuel_unit_cost">Fuel Unit Cost</string>
+    <string name="add_fuel_amount">Fuel Amount(L) (3 sigfig)</string>
+    <string name="add_fuel_unit_cost">Fuel Unit Cost (c/L) (1 sigfig)</string>
     <string name="calc_total_cost">Fuel Total Cost</string>
     <string name="saveEntry">Save New Entry</string>
     <string name="cancelEntry">Cancel New Entry</string>

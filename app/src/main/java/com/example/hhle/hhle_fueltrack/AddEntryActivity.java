@@ -44,7 +44,16 @@ public class AddEntryActivity extends AppCompatActivity {
 
                 try{
                     Entry newEntry = new Entry(dateString, stationString, odometerString, gradeString, fuelAmountString, fuelUnitCostString);
-                    myInstance.addEntry(newEntry);
+                    Intent intent = getIntent();
+                    int entryIndex;
+                    if (intent.hasExtra("Edit")) {
+                        entryIndex = intent.getIntExtra("Edit", -1);
+                        myInstance.editEntry(entryIndex, newEntry);
+                    }
+                    else{
+                        myInstance.addEntry(newEntry);
+                    }
+                    finish();
                 }
                 catch(Exception ex){
                     // show input error toast
